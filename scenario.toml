@@ -3,9 +3,9 @@ agentbeats_id = "019bc007-f901-7c10-83f9-c3179191b534"
 env = { API_KEY = "${GITHUB_SECRET_NAME}", LOG_LEVEL = "INFO" }
 
 [[participants]]
-agentbeats_id = ""
+agentbeats_id = "019b7309-f8e7-75d1-9d40-04b81be567a3"
 name = "assistant"
-env = {}
+env = { GEMINI_API_KEY = "${GEMINI_API_KEY}" }
 
 [config]
 # Add your assessment config here
