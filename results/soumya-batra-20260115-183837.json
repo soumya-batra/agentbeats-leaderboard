@@ -1,0 +1,31 @@
+{
+  "participants": {
+    "solver": "019bc007-f901-7c10-83f9-c3179191b534"
+  },
+  "results": [
+    {
+      "total_tasks": 1,
+      "validated": 0,
+      "no_patch": 0,
+      "errors": 1,
+      "tests_passed": 0,
+      "tests_failed": 0,
+      "average_score": 0.0,
+      "average_turns": 0.0,
+      "results": [
+        {
+          "instance_id": "django__django-11099",
+          "repo": "django/django",
+          "fail_to_pass": [
+            "test_ascii_validator (auth_tests.test_validators.UsernameValidatorsTests)",
+            "test_unicode_validator (auth_tests.test_validators.UsernameValidatorsTests)",
+            "test_help_text (auth_tests.test_validators.UserAttributeSimilarityValidatorTest)"
+          ],
+          "status": "error",
+          "score": 0.0,
+          "error": "[Errno 2] No such file or directory: 'docker'"
+        }
+      ]
+    }
+  ]
+}
