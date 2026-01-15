@@ -9,3 +9,8 @@ env = {}
 
 [config]
 # Add your assessment config here
+instance_id = sympy__sympy-20916
+# Optional filters:
+# instance_id = "django__django-11099"  # Specific task
+# repo = "django/django"                 # Filter by repo
+# difficulty = "easy"                    # Filter by difficulty
