@@ -23,11 +23,10 @@ env = { GEMINI_API_KEY = "${GEMINI_API_KEY}" }
 # image = "swebench-purple-agent:local"
 
 [config]
+repo = "django/django"
 # SWE-bench task configuration
 # Specify which task(s) to evaluate
-
-instance_id = "django__django-15127"
-
+#instance_id = "django__django-15127"
 # Optional filters (uncomment to use):
 # repo = "django/django"                 # Filter by repository
 # difficulty = "easy"                    # Filter by difficulty level
