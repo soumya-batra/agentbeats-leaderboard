@@ -26,7 +26,7 @@ env = { GEMINI_API_KEY = "${GEMINI_API_KEY}" }
 # SWE-bench task configuration
 # Specify which task(s) to evaluate
 
-instance_id = "django__django-11099"
+instance_id = "sympy__sympy-20916"
 
 # Optional filters (uncomment to use):
 # repo = "django/django"                 # Filter by repository
