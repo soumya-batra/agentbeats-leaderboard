@@ -59,20 +59,8 @@ COMPOSE_TEMPLATE = """# Auto-generated from scenario.toml
 # ==============================================================================
 # LOCAL DEVELOPMENT SETUP:
 # If using local Docker images (image: swebench-*:local in scenario.toml),
-# you need to make the following changes after generating this file:
-#
-# 1. Add 'pull_policy: never' to green-agent and participant services
-#    (prevents Docker from trying to pull local images from registry)
-#
-# 2. Add Docker socket mount to green-agent for container spawning:
-#    volumes:
-#      - /var/run/docker.sock:/var/run/docker.sock
-#
-# 3. Add DOCKER_HOST environment variable to green-agent:
-#    environment:
-#      - DOCKER_HOST=unix:///var/run/docker.sock
-#
-# See commented sections below marked with "# LOCAL:" for where to add these.
+# add 'pull_policy: never' to green-agent and participant services
+# (prevents Docker from trying to pull local images from registry)
 # ==============================================================================
 
 services:
@@ -85,11 +73,9 @@ services:
     privileged: true
     command: ["--host", "0.0.0.0", "--port", "{green_port}", "--card-url", "http://green-agent:{green_port}"]
     environment:{green_env}
-      # LOCAL: Uncomment the next line to use host Docker socket
-      # - DOCKER_HOST=unix:///var/run/docker.sock
-    # LOCAL: Uncomment the next 2 lines to mount host Docker socket
-    # volumes:
-    #   - /var/run/docker.sock:/var/run/docker.sock
+      - DOCKER_HOST=unix:///var/run/docker.sock
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:{green_port}/.well-known/agent-card.json"]
       interval: 5s
