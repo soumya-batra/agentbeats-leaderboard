@@ -1,0 +1,17 @@
+{
+  "image_digests": {
+    "green-agent": "ghcr.io/zaidishahbaz/green-agent@sha256:7eda6be6cbcb0648bb31c16a4a7d1b6a33f456b20082d9fb9a95b8e0b3a701e6",
+    "solver": "ghcr.io/soumya-batra/purple-swebench@sha256:e64c2be9ed2abea4cff8fa3235629fb2df8474d00a171705cbcbcc4f209db33b",
+    "agentbeats-client": "ghcr.io/agentbeats/agentbeats-client@sha256:13dfe3ef4e583a80e7ce2fe3becd0ce3b879841368a7f4fa40b6ebbabeeb014e"
+  },
+  "timestamp": "2026-01-16T07:06:17Z",
+  "github_actions": {
+    "run_url": "https://github.com/soumya-batra/agentbeats-leaderboard/actions/runs/21058543810",
+    "run_logs_url": "https://api.github.com/repos/soumya-batra/agentbeats-leaderboard/actions/runs/21058543810/logs",
+    "ref": "refs/heads/main",
+    "sha": "5356bd971a21166a10a8572920aff2d2bb7efd5c",
+    "repository_url": "https://github.com/soumya-batra/agentbeats-leaderboard",
+    "workflow_ref": "soumya-batra/agentbeats-leaderboard/.github/workflows/run-scenario.yml@refs/heads/main",
+    "workflow_sha": "5356bd971a21166a10a8572920aff2d2bb7efd5c"
+  }
+}
