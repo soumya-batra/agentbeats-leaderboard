@@ -26,7 +26,8 @@ env = { GEMINI_API_KEY = "${GEMINI_API_KEY}" }
 # SWE-bench task configuration
 # Specify which task(s) to evaluate
 repo = "sympy/sympy"
-max_tasks = 25
+difficulty = "<15 min fix"
+#max_tasks = 25
 #instance_id = "django__django-15127"
 
 # Optional filters (uncomment to use):
