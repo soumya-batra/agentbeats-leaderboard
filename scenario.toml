@@ -27,6 +27,7 @@ env = { GEMINI_API_KEY = "${GEMINI_API_KEY}" }
 # Specify which task(s) to evaluate
 repo = "sympy/sympy"
 difficulty = "<15 min fix"
+max_attempts = 3
 #max_tasks = 25
 #instance_id = "django__django-15127"
 
