@@ -26,7 +26,9 @@ env = { GEMINI_API_KEY = "${GEMINI_API_KEY}" }
 # SWE-bench task configuration
 # Specify which task(s) to evaluate
 
-instance_id = "django__django-15127"
+#instance_id = "django__django-15127"
+repo = "psf/requests"
+difficulty = '<15 min fix'
 
 # Optional filters (uncomment to use):
 # repo = "django/django"                 # Filter by repository
